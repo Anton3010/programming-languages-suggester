@@ -6,7 +6,7 @@
 
 ## Description
 
-_Programming Language Suggester webpage (using HTML, CSS, JavaScript, and jQuery) that asks future students a series of questions about themselves and provides a language suggestion based on their answers_
+_Programming Language Suggester webpage (using HTML, CSS, JavaScript, and jQuery) that asks future students a series of questions about themselves and provides a language suggestion based on their answers. The project can be viewed at https://anton3010.github.io/programming-languages-suggester/_ 
 
 ## Setup/Installation Requirements
 
