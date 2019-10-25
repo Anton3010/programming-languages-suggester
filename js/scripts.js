@@ -1,7 +1,9 @@
 $(document).ready(function(){
+  // Define global variables
   var cSharp = 0;
   var java = 0;
   var javaScript = 0;
+  // Listen to submit event of the form with id questions-form
   $("#questions-form").submit(function(event) {
     event.preventDefault();
     // if/else statement for the first question
@@ -79,6 +81,7 @@ $(document).ready(function(){
     else {
       $("#result").text("Java and JavaScript");
     }
+    // Show result
     $(".result-wrapper").show();
   });
 });
