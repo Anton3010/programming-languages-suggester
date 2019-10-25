@@ -9,70 +9,79 @@
     <title>Programming Language Suggester</title>
   </head>
   <body>
+    <div class="header">
+      <h1>Programming Language Suggester</h1>
+    </div>
     <div class="container">
-      <form id="questions-form">
-        <div class="form-group">
-          <label for="zodiac-sign">What is your zodiac sign?</label>
-          <input id="zodiac-sign" type="text" class="form-control" placeholder="Enter your zodiac sign">
+      <div class="row">
+        <div class="col-md-6">
+          <form id="questions-form">
+            <div class="form-group">
+              <label for="zodiac-sign">What is your zodiac sign?</label>
+              <input id="zodiac-sign" type="text" class="form-control" placeholder="Enter your zodiac sign">
+            </div>
+            <div class="form-group">
+              <label for="weather">What type of weather do you prefer?</label>
+              <select class="form-control" id="weather">
+                <option>Sunny</option>
+                <option>Cloudy</option>
+                <option>Rainy</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <legend class="col-form-label">Pick your favorite color?</legend>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="color" value="red" checked>
+                  Red
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="color" value="blue">
+                  Blue
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="color" value="yellow">
+                  Yellow
+                </label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="favorite-number">What is your favorite number?</label>
+              <input type="number" class="form-control" id="favorite-number" placeholder="Enter your favorite number">
+            </div>
+            <div class="form-group">
+              <legend class="col-form-label">Choose your favorite pet:</legend>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="pet" value="cat" checked>
+                  Cat
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="pet" value="dog">
+                  Dog
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="pet" value="mouse">
+                  Mouse
+                </label>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
         </div>
-        <div class="form-group">
-          <label for="weather">What type of weather do you prefer?</label>
-          <select class="form-control" id="weather">
-            <option>Sunny</option>
-            <option>Cloudy</option>
-            <option>Rainy</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <legend class="col-form-label">Pick your favorite color?</legend>
-          <div class="radio">
-            <label>
-              <input type="radio" name="color" value="red" checked>
-              Red
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="color" value="blue">
-              Blue
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="color" value="yellow">
-              Yellow
-            </label>
+        <div class="col-md-6">
+          <div class="result-wrapper">
+            <p>Based on provided answers, we suggest you to learn <span id="result"></span>!</p>
           </div>
         </div>
-        <div class="form-group">
-          <label for="favorite-number">What is your favorite number?</label>
-          <input type="number" class="form-control" id="favorite-number" placeholder="Enter your favorite number">
-        </div>
-        <div class="form-group">
-          <legend class="col-form-label">Choose your favorite pet:</legend>
-          <div class="radio">
-            <label>
-              <input type="radio" name="pet" value="cat" checked>
-              Cat
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="pet" value="dog">
-              Dog
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="pet" value="mouse">
-              Mouse
-            </label>
-          </div>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
-      <div class="result-wrapper">
-        <p>Based on provided answers, we suggest you to learn <span id="result"></span>!</p>
       </div>
     </div>
   </body>

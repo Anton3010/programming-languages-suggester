@@ -1,3 +1,28 @@
+body {
+  background: #0F2027;
+  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+  color: #fff;
+  padding: 5%;
+}
+
+.header {
+  padding: 5%;
+  text-align: center;
+}
+
+.header h1 {
+  color: #ffe600;
+}
+
 .result-wrapper {
   display: none;
+  background: #11998e;
+  background: -webkit-linear-gradient(to right, #38ef7d, #11998e);
+  background: linear-gradient(to right, #38ef7d, #11998e);
+  text-align: center;
+  padding: 4%;
+  margin-top: 30%;
+  font-size: 1.8em;
+  border-radius: 5px;
 }
